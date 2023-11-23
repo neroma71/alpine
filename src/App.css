@@ -1,3 +1,6 @@
+body{
+  overflow-x:hidden;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,245 @@
   to {
     transform: rotate(360deg);
   }
+}
+header{
+  height:110px;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.logo{
+  position:absolute;
+  height:200px;
+  width:200px;
+  top:-50px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:100;
+}
+.menu_principal{
+  position:absolute;
+  width:100%;
+  height:40px;
+  top:65px;
+  z-index:100;
+}
+.menu_principal ul{
+  padding:0;
+  margin:0;
+  list-style-type:none;
+  width:100%;
+  display:flex;
+}
+.menu_principal ul li{
+  width:120px;
+  height:40px;
+}
+.menu_principal ul li a{
+  display:inline-block;
+  width:120px;
+  height:40px;
+  color:black;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:bold;
+  line-height:40px;
+}
+.menu_principal ul li a:hover{
+  border-bottom:2px solid black;
+}
+.carousel-inner{
+  position:relative;
+  width:100vw;
+  height: 700px;
+}
+.carousel-item img{
+  width:100%;
+  height:700px;
+  object-fit:cover;
+}
+.carousel-caption{
+  position:absolute;
+  margin:0;
+  left:0;
+  top:calc(700px - 200px);
+  width:100%;
+  height:200px;
+  background:rgba(0, 0, 0, 0.5);
+
+}
+.carousel-caption h5{
+  font-size:40px;
+  font-weight:bold;
+}
+.presentation{
+  position:relative;
+  width:100%;
+  height:650px;
+  top:0;
+  background:white;
+}
+.fond1{
+  position:absolute;
+  height:70%;
+  width:70%;
+  top:15%;
+  left:40%;
+  background:url(./assets/images/sources-homepage/A110/Presentation_desktop-1.png)center no-repeat;
+  background-size:contain;
+}
+.presentation h3{
+  position:absolute;
+  top:100px;
+  left:50px;
+  font-size:50px;
+  font-weight:bold;
+  z-index:100;
+  color:black;
+  z-index:50;
+}
+.firstp{
+  position:absolute;
+  top:200px;
+  left:50px;
+  width:300px;
+  text-align:left;
+  z-index:50;
+}
+.secondp{
+  position:absolute;
+  top:250px;
+  left:50px;
+  width:500px;
+  text-align:left;
+  z-index:50;
+}
+.block-card{
+  width:100%;
+  height:700px;
+  display:flex;
+  justify-content:center;
+}
+.cards{
+  position:relative;
+  width:40%;
+  height:80%;
+  margin:4% 50px;
+  border:1px solid black;
+  overflow:hidden;
+}
+#card1{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background:url(./assets/fond2.jpg)center no-repeat;
+  background-size:cover;
+  transition:all 0.3s linear;
+}
+#card2{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background:url(./assets/alpine2.jpg)center no-repeat;
+  background-size:cover;
+  transition:all 0.3s linear;
+}
+#card1:hover{
+  transform: scale(1.2);
+}
+#card2:hover{
+  transform: scale(1.2);
+}
+.cards h4{
+  position:absolute;
+  color:white;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  font-size:40px;
+  font-weight:bold;
+}
+.modeles{
+  width:100%;
+  margin-top:200px;
+  text-align:center;
+}
+.colcard{
+  position:relative;
+  display:inline-block;
+  width:400px;
+  height:400px;
+  margin:0 100px;
+  top:-50px;
+}
+.colcard img{
+  width:400px;
+  height:200px;
+  object-fit:cover;
+}
+.colcard a{
+  display:inline-block;
+  width:100px;
+  height:30px;
+  text-decoration:none;
+  line-height:25px;
+  background:#163574;
+  color:white;
+  border:1px solid black;
+  border-radius:5px;
+}
+.colcard a:hover{
+  background:#2e55a5;
+}
+.configurateur{
+  text-align: center;
+}
+.configurateur-container{
+  position:relative;
+  width:50%;
+  height:350px;
+  top:100px;
+  left:0;
+  border:1px solid lightgray;
+  display:inline-block;
+  text-align: center;
+  overflow:hidden;
+}
+.configurateur-container img{
+  position:relative;
+  width:400px;
+  height:300px;
+  object-fit:cover;
+}
+.slide_btn{
+  position:absolute;
+  width:100%;
+  left:0;
+  top:calc(100% - 50px);
+}
+.couleur{
+  position:relative;
+  width:50%;
+  height:100px;
+  top:150px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  justify-content:center;
+}
+.couleur img{
+  height:100px;
+  margin:0 5px;
+  cursor:pointer;
+}
+button{
+  width:120px;
+  margin:0 5px;
+  background:#163574;
+  border-radius:5px;
+  border:1px solid black;
+  color:white;
+}
+button:hover{
+  background:#2e55a5;
 }
